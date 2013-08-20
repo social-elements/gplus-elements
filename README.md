@@ -1,8 +1,14 @@
-# &lt;my-element&gt;
+# &lt;gplus&gt;
 
-TODO: Write a project description
+Web Component wrapper for [Google's +1 button](https://developers.google.com/+/web/+1button/) using Polymer.
 
-> Maintained by [Your Name](https://github.com/yourname).
+> Maintained by [Zeno Rocha](https://github.com/zenorocha).
+
+## Demo
+
+![GPlus Element](http://zno.io/Qvag/gplus-element.png)
+
+> [Check it live](http://customelements.github.io/gplus-element).
 
 ## Usage
 
@@ -15,23 +21,26 @@ TODO: Write a project description
 2. Import Custom Element:
 
 	```html
-	<link rel="import" href="src/my-element.html">
+	<link rel="import" href="src/gplus.html">
 	```
 
 3. Start using it!
 
-	```xml
-	<my-element></my-element>
+	```html
+	<gplus></gplus>
 	```
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
+Attribute    | Options                               | Default             		 | Description
+---          | ---                                   | ---                 		 | ---
+`annotation` | `inline`, `bubble`, `none`            | `inline`            		 | Sets the annotation to display next to the button
+`href`       | *string*                              | `http://customelement.io` | The URL to +1
+`size`       | `small`, `medium`, `standard`, `tall` | `standard`          		 | Sets the +1 button size to render
+`height`     | *int*                                 | `25`               		 | The height of the button
+`width`      | *int*                                 | `300`               		 | The width of the button
 
+> See Google Plus' [official documentation](https://developers.google.com/+/web/+1button/).
 
 ## Contributing
 
