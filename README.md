@@ -52,6 +52,8 @@ Attribute    | Options                               | Default             		 | 
 
 ## History
 
+* [v0.1.0](https://github.com/customelements/gplus-element/releases/tag/0.1.0) August 20, 2013
+	* Initial development release
 * v0.0.1 August 19, 2013
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 
