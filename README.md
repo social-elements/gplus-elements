@@ -8,7 +8,7 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 ![GPlus Element](http://zno.io/Qvag/gplus-element.png)
 
-> [Check it live](http://customelements.github.io/gplus-element).
+> [Check it live](http://zenorocha.github.io/gplus-element).
 
 ## Usage
 
@@ -52,7 +52,9 @@ Attribute    | Options                               | Default             		 | 
 
 ## History
 
-* [v0.1.0](https://github.com/customelements/gplus-element/releases/tag/0.1.0) August 20, 2013
+* [v0.1.1](https://github.com/zenorocha/gplus-element/releases/tag/0.1.1) September 3, 2013
+	* Use Polymer from CDN and update it to v0.0.20130816
+* [v0.1.0](https://github.com/zenorocha/gplus-element/releases/tag/0.1.0) August 20, 2013
 	* Initial development release
 * v0.0.1 August 19, 2013
 	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
