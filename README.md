@@ -15,7 +15,7 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 1. Import Web Components' polyfill:
 
 	```html
-	<script src="lib/polymer.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
 	```
 
 2. Import Custom Element:
