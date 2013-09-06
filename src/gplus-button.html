@@ -1,4 +1,4 @@
-<polymer-element name="gplus" attributes="annotation href size width height">
+<polymer-element name="gplus-button" attributes="annotation href size width height">
 
 	<template>
 		<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation={{annotation}}&amp;size={{size}}&amp;hl=en-US&amp;url={{href}}&amp;parent={{href}}" allowtransparency="true" frameborder="0" scrolling="no" title="+1"></iframe>
@@ -12,7 +12,7 @@
 	</template>
 
 	<script>
-		Polymer('gplus', {
+		Polymer('gplus-button', {
 			annotation: 'inline',
 			href      : 'http://customelements.io',
 			size      : 'standard',

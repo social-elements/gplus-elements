@@ -1,8 +1,6 @@
-# &lt;gplus&gt;
+# &lt;gplus-button&gt;
 
 Web Component wrapper for [Google's +1 button](https://developers.google.com/+/web/+1button/) using Polymer.
-
-> Maintained by [Zeno Rocha](https://github.com/zenorocha).
 
 ## Demo
 
@@ -14,20 +12,20 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 1. Import Web Components' polyfill:
 
-	```html
+	```xml
 	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
 	```
 
 2. Import Custom Element:
 
-	```html
-	<link rel="import" href="src/gplus.html">
+	```xml
+	<link rel="import" href="src/gplus-button.html">
 	```
 
 3. Start using it!
 
-	```html
-	<gplus></gplus>
+	```xml
+	<gplus-button></gplus-button>
 	```
 
 ## Options
@@ -61,4 +59,4 @@ Attribute    | Options                               | Default             		 | 
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
