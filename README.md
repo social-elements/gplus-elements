@@ -32,11 +32,30 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 Attribute    | Options                               | Default             		 | Description
 ---          | ---                                   | ---                 		 | ---
+`type`       | `gplus`, `follow`                     | `gplus`             		 | The type of button
+
+
+## Options - button gplus
+
+Attribute    | Options                               | Default             		 | Description
+---          | ---                                   | ---                 		 | ---
 `annotation` | `inline`, `bubble`, `none`            | `inline`            		 | Sets the annotation to display next to the button
 `href`       | *string*                              | `http://customelement.io` | The URL to +1
 `size`       | `small`, `medium`, `standard`, `tall` | `standard`          		 | Sets the +1 button size to render
 `height`     | *int*                                 | `25`               		 | The height of the button
 `width`      | *int*                                 | `300`               		 | The width of the button
+
+
+## Options - button follow
+
+Attribute    | Options                               | Default             		 | Description
+---          | ---                                   | ---                 		 | ---
+`pageId`      | `URL to the Google+ page or user profile, examples: https://plus.google.com/110967630299632321627, https://plus.google.com/+LarryPage`  | `109325404047497404656`            | URL to the Google+ page or user profile
+`pageLang`    | `pt-BR`, `en-US`, `es`, [more languages](https://developers.google.com/+/web/+1button/#available-languages)              | `en-US`                            | language of component
+`annotation`  | `bubble`,`vertical-bubble`,`none`   | `bubble`                           | Sets the annotation to display next to the button.
+`rel`         | `author or publisher`               | `string empty`                     | Describes the relationship of the entity defined at the href location to the page the badge is embedded.
+`height`      | `15`,`20`,`24`                      | `20`                               | The pixel height of the button to render.
+
 
 > See Google Plus' [official documentation](https://developers.google.com/+/web/+1button/).
 
@@ -50,6 +69,8 @@ Attribute    | Options                               | Default             		 | 
 
 ## History
 
+* [v0.1.3](https://github.com/zenorocha/gplus-button/releases/tag/0.1.3) September 9, 2013
+	* Add element gplus follow.
 * [v0.1.2](https://github.com/zenorocha/gplus-button/releases/tag/0.1.2) September 6, 2013
 	* Rename element from `<gplus>` to `<gplus-button>`
 	* Rename repo from `gplus-element` to `gplus-button`
