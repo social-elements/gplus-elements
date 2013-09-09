@@ -32,7 +32,7 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 Attribute    | Options                               | Default             		 | Description
 ---          | ---                                   | ---                 		 | ---
-`type`       | `gplus`, `follow`                     | `gplus`             		 | The type of button
+`type`       | `plus`, `follow`                     | `plus`             		 | The type of button
 
 
 ## Options - button gplus
