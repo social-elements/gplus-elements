@@ -1,23 +1,43 @@
-<polymer-element name="gplus-button" attributes="annotation href size width height">
-
-	<template>
-		<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation={{annotation}}&amp;size={{size}}&amp;hl=en-US&amp;url={{href}}&amp;parent={{href}}" allowtransparency="true" frameborder="0" scrolling="no" title="+1"></iframe>
-
-		<style>
-			iframe {
-				height: {{height}}px;
-				width: {{width}}px;
-			}
-		</style>
-	</template>
+<polymer-element name="gplus-button"
+		 attributes="annotation href size pageId lang rel width height type">
 
 	<script>
-		Polymer('gplus-button', {
-			annotation: 'inline',
-			href      : 'http://customelements.io',
-			size      : 'standard',
-			height    : '25',
-			width     : '300'
+		Polymer("gplus-button", {
+			annotation 	: "bubble",
+			href      	: "http://customelements.io",
+			size      	: "standard",
+			pageId		: "109325404047497404656",
+			lang		: "en-US",
+			rel 		: "",
+			width		: 300,
+			height 		: 20,
+			type 		: "g-plusone",
+			
+			created: function () {
+				var script = document.createElement("script"),
+					div = document.createElement("div"),
+					body = document.body;
+				
+				script.setAttribute("type", "text/javascript");
+				script.setAttribute("src", "https://apis.google.com/js/plusone.js");
+				script.setAttribute("async", true);
+				script.innerHTML = "{lang: '" + this.lang + "'}";
+
+				div.setAttribute("class", this.type);
+				if (this.type == "g-follow" ) {
+					div.setAttribute("data-href", ("http://plus.google.com/" + this.pageId));
+					div.setAttribute("data-annotation", this.annotation);
+					div.setAttribute("data-rel", this.rel);
+					div.setAttribute("data-height", this.height);
+				} else {
+					div.setAttribute("href", this.href);
+					div.setAttribute("size", this.size);
+					div.setAttribute("width", this.width);
+					div.setAttribute("annotation", this.annotation);
+				}
+				body.appendChild(div);
+				body.appendChild(script);
+			}
 		});
 	</script>
 
