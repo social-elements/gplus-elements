@@ -1,20 +1,5 @@
 <polymer-element name="gplus-button"
-		 attributes="annotation href size pageId pageLang rel width height type">
-
-	<template>
-
-		<template if="{{type == 'plus'}}">
-			<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;annotation={{annotation}}&amp;size={{size}}&amp;hl={{pageLang}}&amp;url={{href}}&amp;parent={{href}}" allowtransparency="true" frameborder="0" scrolling="no" title="+1"></iframe>
-
-			<style>
-				iframe {
-					height: {{height}}px;
-					width: {{width}}px;
-				}
-			</style>
-		</template>
-
-	</template>
+		 attributes="annotation href size pageId lang rel width height type">
 
 	<script>
 		Polymer("gplus-button", {
@@ -22,33 +7,37 @@
 			href      	: "http://customelements.io",
 			size      	: "standard",
 			pageId		: "109325404047497404656",
-			pageLang	: "en-US",
+			lang		: "en-US",
 			rel 		: "",
 			width		: 300,
 			height 		: 20,
-			type 		: "plus",
+			type 		: "g-plusone",
 			
 			created: function () {
-				if (this.type == "follow" ) {
-					var script = document.createElement("script"),
-						div = document.createElement("div"),
-						body = document.body;
-					
-					script.setAttribute("type", "text/javascript");
-					script.setAttribute("src", "https://apis.google.com/js/plusone.js");
-					script.setAttribute("async", true);
-					script.innerHTML = "{lang: '" + this.pageLang + "'}";
+				
+				var script = document.createElement("script"),
+					div = document.createElement("div"),
+					body = document.body;
+				
+				script.setAttribute("type", "text/javascript");
+				script.setAttribute("src", "https://apis.google.com/js/plusone.js");
+				script.setAttribute("async", true);
+				script.innerHTML = "{lang: '" + this.pageLang + "'}";
 
-					div.setAttribute("class", "g-follow");
-					div.setAttribute("data-annotation", this.annotation);
-					div.setAttribute("data-height", this.height);
+				div.setAttribute("class", this.type);
+				div.setAttribute("data-width", this.width);
+				div.setAttribute("data-height", this.height);
+				div.setAttribute("data-annotation", this.annotation);
+
+				if (this.type == "g-follow" ) {
 					div.setAttribute("data-href", ("http://plus.google.com/" + this.pageId));
 					div.setAttribute("data-rel", this.rel);
-
-					body.appendChild(div);
-					body.appendChild(script);
+				} else {
+					div.setAttribute("data-href", this.href);
+					div.setAttribute("data-size", this.size);
 				}
-			}
+				body.appendChild(div);
+				body.appendChild(script);
 		});
 	</script>
 
