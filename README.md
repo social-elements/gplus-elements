@@ -42,7 +42,6 @@ Attribute    | Options                               | Default             		 | 
 ---          | ---                                   | ---                 		 | ---
 `href`       | *string*                              | `http://customelement.io` | The URL to +1
 `size`       | `small`, `medium`, `standard`, `tall` | `standard`          		 | Sets the +1 button size to render
-`height`     | *int*                                 | `20`               		 | The height of the button
 `width`      | *int*                                 | `300`               		 | The width of the button
 `annotation`  | `bubble`,`inline`,`none`             | `bubble`                  | Sets the annotation to display next to the button.
 

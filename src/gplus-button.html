@@ -10,7 +10,7 @@
 			lang		: "en-US",
 			rel 		: "",
 			width		: 300,
-			height 		: 20,
+			height 		: 25,
 			type 		: "g-plusone",
 			
 			created: function () {
@@ -25,16 +25,16 @@
 				script.innerHTML = "{lang: '" + this.lang + "'}";
 
 				div.setAttribute("class", this.type);
-				div.setAttribute("data-width", this.width);
-				div.setAttribute("data-height", this.height);
-				div.setAttribute("data-annotation", this.annotation);
-
 				if (this.type == "g-follow" ) {
 					div.setAttribute("data-href", ("http://plus.google.com/" + this.pageId));
+					div.setAttribute("data-annotation", this.annotation);
 					div.setAttribute("data-rel", this.rel);
+					div.setAttribute("data-height", this.height);
 				} else {
-					div.setAttribute("data-href", this.href);
-					div.setAttribute("data-size", this.size);
+					div.setAttribute("href", this.href);
+					div.setAttribute("size", this.size);
+					div.setAttribute("width", this.width);
+					div.setAttribute("annotation", this.annotation);
 				}
 				body.appendChild(div);
 				body.appendChild(script);
