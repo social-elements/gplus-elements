@@ -68,8 +68,8 @@ Attribute    | Options                               | Default             		 | 
 
 ## History
 
-* [v0.1.3](https://github.com/zenorocha/gplus-button/releases/tag/0.1.3) September 9, 2013
-	* Add element gplus follow.
+* [v0.1.3](https://github.com/zenorocha/gplus-button/releases/tag/0.1.3) September 18, 2013
+	* Add follow button.
 * [v0.1.2](https://github.com/zenorocha/gplus-button/releases/tag/0.1.2) September 6, 2013
 	* Rename element from `<gplus>` to `<gplus-button>`
 	* Rename repo from `gplus-element` to `gplus-button`
