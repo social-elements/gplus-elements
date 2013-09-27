@@ -68,17 +68,7 @@ Attribute    | Options                               | Default             		 | 
 
 ## History
 
-* [v0.1.3](https://github.com/zenorocha/gplus-button/releases/tag/0.1.3) September 18, 2013
-	* Add follow button.
-* [v0.1.2](https://github.com/zenorocha/gplus-button/releases/tag/0.1.2) September 6, 2013
-	* Rename element from `<gplus>` to `<gplus-button>`
-	* Rename repo from `gplus-element` to `gplus-button`
-* [v0.1.1](https://github.com/zenorocha/gplus-button/releases/tag/0.1.1) September 3, 2013
-	* Use Polymer from CDN and update it to v0.0.20130816
-* [v0.1.0](https://github.com/zenorocha/gplus-button/releases/tag/0.1.0) August 20, 2013
-	* Initial development release
-* v0.0.1 August 19, 2013
-	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
+Check [Release](https://github.com/zenorocha/gplus-button/releases) list.
 
 ## License
 
