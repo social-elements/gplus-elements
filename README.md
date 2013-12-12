@@ -58,6 +58,12 @@ Attribute    | Options                               | Default             		 | 
 
 > See Google Plus' [official documentation](https://developers.google.com/+/web/+1button/).
 
+## Browser Support
+
+![IE](https://raw.github.com/paulirish/browser-logos/master/ie/ie_48x48.png) | ![Chrome](https://raw.github.com/paulirish/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/paulirish/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/paulirish/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/paulirish/browser-logos/master/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+IE 10+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+
 ## Contributing
 
 1. Fork it!
