@@ -30,34 +30,37 @@ Or [download as ZIP](https://github.com/zenorocha/gplus-elements/archive/master.
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/gplus-buttons/dist/gplus-one.html">
-    <link rel="import" href="bower_components/gplus-buttons/dist/gplus-follow.html">
+    <link rel="import" href="bower_components/gplus-elements/dist/gplus-one.html">
+    <link rel="import" href="bower_components/gplus-elements/dist/gplus-follow.html">
     ```
 
 3. Start using it!
 
     ```html
-    <gplus-buttons></gplus-buttons>
+    <gplus-one></gplus-one>
+    <gplus-follow></gplus-follow>
     ```
 
-## Options - button gplus
+## &lt;gplus-one&gt;
 
-Attribute    | Options                               | Default                   | Description
----          | ---                                   | ---                       | ---
-`href`       | *string*                              | `http://customelement.io` | The URL to +1
-`size`       | `small`, `medium`, `standard`, `tall` | `standard`                | Sets the +1 button size to render
-`width`      | *int*                                 | `300`                     | The width of the button
-`annotation`  | `bubble`,`inline`,`none`             | `bubble`                  | Sets the annotation to display next to the button.
+Attribute    | Options                               | Default                    | Description
+---          | ---                                   | ---                        | ---
+`annotation` | `bubble`,`inline`,`none`              | `bubble`                   | Sets the annotation to display next to the button
+`height`     | `15`,`20`,`24`                        | `20`                       | The pixel height of the button to render
+`href`       | *string*                              | `http://webcomponents.org` | The URL to +1
+`size`       | `small`, `medium`, `standard`, `tall` | `standard`                 | Sets the +1 button size to render
+`width`      | *int*                                 | `300`                      | The width of the button
 
 
-## Options - button follow
+## &lt;gplus-follow&gt;
 
-Attribute    | Options                               | Default                   | Description
----          | ---                                   | ---                       | ---
-`pageId`      | `URL to the Google+ page or user profile, examples: https://plus.google.com/110967630299632321627, https://plus.google.com/+LarryPage`  | `109325404047497404656`            | URL to the Google+ page or user profile
-`annotation`  | `bubble`,`vertical-bubble`,`none`   | `bubble`                           | Sets the annotation to display next to the button.
-`rel`         | `author or publisher`               | `string empty`                     | Describes the relationship of the entity defined at the href location to the page the badge is embedded.
-`height`      | `15`,`20`,`24`                      | `20`                               | The pixel height of the button to render.
+Attribute    | Options                               | Default                                     | Description
+---          | ---                                   | ---                                         | ---
+`annotation` | `bubble`, `vertical-bubble`, `none`   | `bubble`                                    | Sets the annotation to display next to the button
+`height`     | `15`,`20`,`24`                        | `20`                                        | The pixel height of the button to render
+`href`       | *string*                              | `https://plus.google.com/+WebcomponentsOrg` | URL to the Google+ page or user profile
+`rel`        | `author or publisher`                 |                                             | Describes the relationship of the entity defined at the href location to the page the badge is embedded.
+`width`      | *int*                                 | `300`                                       | The width of the button
 
 > See Google Plus' [official documentation](https://developers.google.com/+/web/+1button/).
 
