@@ -1,23 +1,23 @@
-# &lt;gplus-buttons&gt;
+# &lt;gplus-elements&gt;
 
-Web Component wrapper for [Google's +1 button](https://developers.google.com/+/web/+1button/) using Polymer.
+Web Component wrapper for [Google Plus' buttons](https://developers.google.com/+/web/+1button/) using Polymer.
 
 
 ## Demo
 
 ![GPlus Element](http://zno.io/Qvag/gplus-element.png)
 
-> [Check it live](http://zenorocha.github.io/gplus-buttons).
+> [Check it live](http://zenorocha.github.io/gplus-elements).
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install gplus-buttons --save
+$ bower install gplus-elements --save
 ```
 
-Or [download as ZIP](https://github.com/zenorocha/gplus-buttons/archive/master.zip).
+Or [download as ZIP](https://github.com/zenorocha/gplus-elements/archive/master.zip).
 
 ## Usage
 
@@ -105,7 +105,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/zenorocha/gplus-buttons/releases).
+For detailed changelog, check [Releases](https://github.com/zenorocha/gplus-elements/releases).
 
 ## License
 
