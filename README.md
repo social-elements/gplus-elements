@@ -1,4 +1,4 @@
-# &lt;gplus-button&gt;
+# &lt;gplus-buttons&gt;
 
 Web Component wrapper for [Google's +1 button](https://developers.google.com/+/web/+1button/) using Polymer.
 
@@ -7,17 +7,17 @@ Web Component wrapper for [Google's +1 button](https://developers.google.com/+/w
 
 ![GPlus Element](http://zno.io/Qvag/gplus-element.png)
 
-> [Check it live](http://zenorocha.github.io/gplus-button).
+> [Check it live](http://zenorocha.github.io/gplus-buttons).
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install gplus-button --save
+$ bower install gplus-buttons --save
 ```
 
-Or [download as ZIP](https://github.com/zenorocha/gplus-button/archive/master.zip).
+Or [download as ZIP](https://github.com/zenorocha/gplus-buttons/archive/master.zip).
 
 ## Usage
 
@@ -30,13 +30,14 @@ Or [download as ZIP](https://github.com/zenorocha/gplus-button/archive/master.zi
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/gplus-button/dist/gplus-button.html">
+    <link rel="import" href="bower_components/gplus-buttons/dist/gplus-one.html">
+    <link rel="import" href="bower_components/gplus-buttons/dist/gplus-follow.html">
     ```
 
 3. Start using it!
 
     ```html
-    <gplus-button></gplus-button>
+    <gplus-buttons></gplus-buttons>
     ```
 
 ## Options - button gplus
@@ -104,7 +105,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/zenorocha/gplus-button/releases).
+For detailed changelog, check [Releases](https://github.com/zenorocha/gplus-buttons/releases).
 
 ## License
 

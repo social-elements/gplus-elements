@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         },
         'gh-pages': {
             options: {
-                clone: 'bower_components/gplus-button'
+                clone: 'bower_components/gplus-buttons'
             },
             src: [
                 'bower_components/**/*',
-                '!bower_components/gplus-button/**/*',
+                '!bower_components/gplus-buttons/**/*',
                 'src/*', 'index.html'
             ]
         },

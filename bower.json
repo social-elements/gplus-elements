@@ -1,5 +1,5 @@
 {
-    "name": "gplus-button",
+    "name": "gplus-buttons",
     "version": "0.1.5",
     "description": "Web Component wrapper for Google's +1 button using Polymer.",
     "license": "MIT",
