@@ -1,6 +1,6 @@
 {
     "name": "gplus-elements",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Web Component wrapper for Google Plus' buttons using Polymer.",
     "license": "MIT",
     "main": "dist/gplus-one.html",
