@@ -1,41 +1,64 @@
 <!-- Import Polymer -->
 <link rel="import" href="../../polymer/polymer.html">
 
-<!-- Define your custom element -->
-<polymer-element name="gplus-follow"
-         attributes="annotation height href lang rel size width">
+<!-- Defines element markup -->
+<dom-module id="gplus-follow">
+    <template></template>
+</dom-module>
 
-    <script>
-        Polymer("gplus-follow", {
-            annotation : "bubble",
-            height     : 20,
-            href       : "https://plus.google.com/+WebcomponentsOrg",
-            lang       : "en-US",
-            rel        : "",
-            size       : "standard",
-            width      : 300,
-
-            ready: function () {
-                var script = document.createElement("script"),
-                    div = document.createElement("div"),
-                    body = document.body;
-
-                script.setAttribute("type", "text/javascript");
-                script.setAttribute("src", "https://apis.google.com/js/plusone.js");
-                script.setAttribute("async", true);
-                script.innerHTML = "{lang: '" + this.lang + "'}";
-
-                div.setAttribute("class", "g-follow");
-
-                div.setAttribute("data-href", this.href);
-                div.setAttribute("data-annotation", this.annotation);
-                div.setAttribute("data-rel", this.rel);
-                div.setAttribute("data-height", this.height);
-
-                this.appendChild(div);
-                body.appendChild(script);
+<!-- Registers custom element -->
+<script>
+    Polymer({
+        is         : 'gplus-follow',
+        properties : {
+            annotation : {
+                type   : String,
+                value  : "bubble"
+            },
+            height     : {
+                type   : Number,
+                value  : 20
+            },
+            href       : {
+                type   : String,
+                value  : "https://plus.google.com/+WebcomponentsOrg"
+            },
+            lang       : {
+                type   : String,
+                value  : "en-US"
+            },
+            rel        : {
+                type   : String,
+                value  : ""
+            },
+            size       : {
+                type   : String,
+                value  : "standard"
+            },
+            width      : {
+                type   : Number,
+                value  : 300
             }
-        });
-    </script>
+        },
+        ready: function () {
+            var script = document.createElement("script"),
+                div = document.createElement("div"),
+                body = document.body;
 
-</polymer-element>
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("src", "https://apis.google.com/js/plusone.js");
+            script.setAttribute("async", true);
+            script.innerHTML = "{lang: '" + this.lang + "'}";
+
+            div.setAttribute("class", "g-follow");
+
+            div.setAttribute("data-href", this.href);
+            div.setAttribute("data-annotation", this.annotation);
+            div.setAttribute("data-rel", this.rel);
+            div.setAttribute("data-height", this.height);
+
+            this.appendChild(div);
+            body.appendChild(script);
+        }
+    });
+</script>
